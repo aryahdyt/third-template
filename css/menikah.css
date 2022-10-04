@@ -749,6 +749,60 @@ color: #303030;
   /* rotate: 222deg; */
 }
 
+.footer {
+  background: linear-gradient(rgba(41, 41, 41, 0.3), rgba(0, 0, 0, 0.3)), url(../image/2-01.png) no-repeat;
+  background-size: cover;
+  background-position-y: 60%;
+  background-position-x: center;
+  height: fit-content;
+  /* padding: 80px 40px; */
+  /* bottom: 0;
+  width: 100vw;
+  padding: 10px 10px 10px 10px;
+  line-height: 25px;
+  text-align: center;
+  vertical-align: middle; */
+  color: whitesmoke;    
+}
+
+
+
+.footer .footer-thanks{
+  font-weight: 600;
+  font-size: 3.5vmin;
+  line-height: 24px;
+  letter-spacing: 0.6em;
+
+  color: #FFFFFF;
+}
+
+.footer .footer-client{
+  text-align: center;
+  font-weight: 400;
+  line-height: 75px;
+  margin: 3rem auto;
+  font-size: 72px;
+  width: 50%;
+  color: #FFFFFF;
+}
+
+.footer .footer-date{
+  font-weight: 600;
+  font-size: 3vmin;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+
+  color: #FFFFFF;
+}
+
+.footer .footer-pecatu{
+  /* width: 150px; */
+  font-weight: 500;
+  font-size: 3vmin;
+  
+  color: #FFFFFF;
+}
+
 
 .main-content .section-img {
   background: linear-gradient(rgba(41, 41, 41, 0.7), rgba(0, 0, 0, 0.7)), rgba(0, 0, 0, 0.7) url(../image/1-01.png) no-repeat;
