@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'Baskerville';
+  src: url('./baskerville_v2/Baskerville-Old-Face-V2.eot'); /* IE9 Compat Modes */
+  src: url('./baskerville_v2/Baskerville-Old-Face-V2.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('./baskerville_v2/Baskerville-Old-Face-V2.woff2') format('woff2'), /* Super Modern Browsers */
+    url('./baskerville_v2/Baskerville-Old-Face-V2.woff') format('woff'), /* Pretty Modern Browsers */
+    url('./baskerville_v2/Baskerville-Old-Face-V2.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('./baskerville_v2/Baskerville-Old-Face-V2.svg#BaskOldFace') format('svg'); /* Legacy iOS */
+  
+}
+
+@font-face {
+  font-family: 'Edwardian';
+  src: url('./edwardian/edwardian-script-itc-webfont.eot');
+  src: url('./edwardian/edwardian-script-itc-webfont.eot?#iefix') format('embedded-opentype'),
+       url('./edwardian/edwardian-script-itc-webfont.woff2') format('woff2'),
+       url('./edwardian/edwardian-script-itc-webfont.woff') format('woff'),
+       url('./edwardian/edwardian-script-itc-webfont.ttf') format('truetype'),
+       url('./edwardian/edwardian-script-itc-webfont.svg#edwardian_script_itcregular') format('svg');
+}
+
+@font-face {
+  font-family: 'Tangerine';
+  src: url('./tangerine/tangerine.eot');
+  src: url('./tangerine/tangerine.eot?#iefix') format('embedded-opentype'),
+       url('./tangerine/tangerine.woff') format('woff'),
+       url('./tangerine/tangerine.ttf') format('truetype'),
+       /* url('./edwardian/edwardian-script-itc-webfont.woff2') format('woff2'), */
+       /* url('./edwardian/edwardian-script-itc-webfont.svg#edwardian_script_itcregular') format('svg'); */
+}
+@font-face {
+  font-family: 'Junge';
+  src: url('./junge/Junge-Regular.ttf') format('truetype'),
+       url('./junge/junge.woff2') format('woff2'),
+       /* url('./edwardian/edwardian-script-itc-webfont.svg#edwardian_script_itcregular') format('svg'); */
+}
+
+/* @font-face {
+  font-family: 'Junge';
+  /* font-style: normal;
+  font-weight: 400; */
+  /* src: url(https://fonts.gstatic.com/s/junge/v20/gokgH670Gl1lUpAatBE.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+} */ */
