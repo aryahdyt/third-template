@@ -10,7 +10,7 @@ let dummysay = [
 
 $(document).on('click', '.btn-open', function () {
   // console.log('cliked');
-  // play_music();
+  play_music();
 
   document.getElementById('btnMusic').classList.remove('is-hidden');
   document.getElementById('toTop').classList.remove('is-hidden');
