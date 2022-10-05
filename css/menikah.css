@@ -805,10 +805,13 @@ color: #303030;
 
 .footer .footer-pecatu{
   /* width: 150px; */
-  font-weight: 500;
   font-size: 3vmin;
   
   color: #FFFFFF;
+}
+
+.footer .footer-pecatu span{
+  font-weight: 500;
 }
 
 
