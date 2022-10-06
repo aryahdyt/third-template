@@ -158,6 +158,7 @@ html {
   box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   font-family: 'Raleway', sans-serif;
   /* padding: 3%; */
+  /* height: 100%; */
 }
 
 .hero-title{
@@ -167,6 +168,13 @@ html {
   letter-spacing: 0.38em;
   
   color: #303030;
+}
+
+@media (max-width: 518px) {
+  .hero {
+    background-position: -10rem !important;
+    background-attachment: scroll !important;
+  }
 }
 
 .hero-tamu{
@@ -816,12 +824,20 @@ color: #303030;
 
 
 .main-content .section-img {
+  background: linear-gradient(rgba(41, 41, 41, 0.7), rgba(0, 0, 0, 0.7)), rgba(0, 0, 0, 0.7) url(../image/1-01.png) repeat;
+  /* background-attachment: fixed; */
+  background-size: contain;
+  padding: 80px 40px;
+  color: #F8F7E9 !important;
+}
+/* 
+.main-content .section-img {
   background: linear-gradient(rgba(41, 41, 41, 0.7), rgba(0, 0, 0, 0.7)), rgba(0, 0, 0, 0.7) url(../image/1-01.png) no-repeat;
   background-attachment: fixed;
   background-size: cover;
   padding: 80px 40px;
   color: #F8F7E9 !important;
-}
+} */
 
 /* .main-content .section-img:before {
   content: ' ';
@@ -838,13 +854,22 @@ color: #303030;
 } */
 
 .main-content .section-img-light {
+  background: linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)), rgba(255, 255, 255, 0.35) url(../image/1-01.png) repeat;
+  /* background-attachment: fixed; */
+  background-size: contain;
+  /* background-position-x: -2rem; */
+  /* padding: 80px 40px; */
+  color: #F8F7E9 !important;
+}
+/* 
+.main-content .section-img-light {
   background: linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)), rgba(255, 255, 255, 0.35) url(../image/1-01.png) no-repeat;
   background-attachment: fixed;
   background-size: cover;
   /* background-position-x: -2rem; */
   /* padding: 80px 40px; */
   color: #F8F7E9 !important;
-}
+} */
 
 .main-content .section-texture-element {
   background: url(../image/bg-texture.jpg) no-repeat;
@@ -895,6 +920,9 @@ color: #303030;
   position:absolute;
 
 }
+.map-responsive iframe:hover{
+  display: none;
+}
 
 .fullpersen{
 
@@ -922,4 +950,43 @@ color: #303030;
 
   position:absolute;
 
+}
+
+.frame-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */  
+  padding-top: 25px;
+  width: 300%; /* enlarge beyond browser width */
+  left: -100%; /* center */
+}
+
+.frame-container iframe {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%;
+}
+
+.wrapper {
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.youtube-container {
+  overflow: hidden;
+  width: 100%;
+  /* Keep it the right aspect-ratio */
+  aspect-ratio: 16/9;
+  /* No clicking/hover effects */
+  pointer-events: none;
+  height: 60vmin;
+} 
+
+.youtube-container iframe {
+  /* Extend it beyond the viewport... */
+  width: 300%;
+  height: 100%;
+  /* ...and bring it back again */
+  margin-left: -100%;
 }
