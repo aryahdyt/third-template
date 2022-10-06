@@ -413,7 +413,7 @@ color: #303030;
   /* min-height: 600px; */
   /* min-width: 10vh; */
   /* min-height: 70vh; */
-  padding: 5vh;
+  padding: 7vh;
   background: #A35E7A;
   box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.61);
 }
@@ -437,9 +437,9 @@ color: #303030;
 .ourstory-text .paragraf-ourstory{
   /* font-weight: 400; */
   font-size: calc(11px + 0.390625vw);
-  text-align: center !important;
+  /* text-align: center !important; */
   /* letter-spacing: 0.08em; */
-  font-style: italic;
+  /* font-style: italic; */
   letter-spacing: 0.13em;
   
   color: #FFFFFF;
