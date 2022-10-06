@@ -1016,3 +1016,9 @@ color: #303030;
   /* ...and bring it back again */
   margin-left: -100%;
 }
+
+.videot {
+  height: 20rem !important;
+    width: 100% !important;
+  object-fit: cover !important;
+}
