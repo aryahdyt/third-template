@@ -826,7 +826,7 @@ color: #303030;
 .main-content .section-img {
   background: linear-gradient(rgba(41, 41, 41, 0.7), rgba(0, 0, 0, 0.7)), rgba(0, 0, 0, 0.7) url(../image/1-01.png) repeat;
   /* background-attachment: fixed; */
-  background-size: contain;
+  background-size: cover;
   padding: 80px 40px;
   color: #F8F7E9 !important;
 }
@@ -856,11 +856,19 @@ color: #303030;
 .main-content .section-img-light {
   background: linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)), rgba(255, 255, 255, 0.35) url(../image/1-01.png) repeat;
   /* background-attachment: fixed; */
-  background-size: contain;
+  background-size: cover;
   /* background-position-x: -2rem; */
   /* padding: 80px 40px; */
   color: #F8F7E9 !important;
 }
+
+@media (max-width: 518px) {
+  .main-content .section-img-light, .main-content .section-img {
+    background-size: contain;
+    background-repeat: repeat;
+  }
+}
+
 /* 
 .main-content .section-img-light {
   background: linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)), rgba(255, 255, 255, 0.35) url(../image/1-01.png) no-repeat;
@@ -868,7 +876,7 @@ color: #303030;
   background-size: cover;
   /* background-position-x: -2rem; */
   /* padding: 80px 40px; */
-  color: #F8F7E9 !important;
+  /* color: #F8F7E9 !important;
 } */
 
 .main-content .section-texture-element {
