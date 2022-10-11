@@ -870,9 +870,9 @@ color: #303030;
 } */
 
 .main-content .section-img-light {
-  background: linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)), rgba(255, 255, 255, 0.35) url(../image/1-01.png) repeat;
+  background: linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)), rgba(255, 255, 255, 0.35) url(../image/1-01.png) no-repeat;
   /* background-attachment: fixed; */
-  background-size: contain;
+  background-size: cover;
   /* background-position-x: -2rem; */
   /* padding: 80px 40px; */
   color: #F8F7E9 !important;
