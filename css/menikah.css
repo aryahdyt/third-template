@@ -775,7 +775,7 @@ color: #303030;
   background-position-y: 60%;
   background-position-x: center;
   height: fit-content;
-  /* padding: 80px 40px; */
+  padding: 80px 40px;
   /* bottom: 0;
   width: 100vw;
   padding: 10px 10px 10px 10px;
@@ -904,13 +904,20 @@ color: #303030;
 }
 
 .main-content .section-texture-gallery {
+  background: url(../image/bg-texture.jpg) no-repeat;
+
+  background-size: cover;
+  /* background-position-y: calc(100% + 0.390625vw), -2px; */
+  padding: 80px 40px;
+}
+
+/* .main-content .section-texture-gallery {
   background: url(../image/5-01.png) no-repeat, url(../image/bg-texture.jpg) no-repeat;
-  /* url(../image/5-01.png) no-repeat; */
-  /* background-position-y: -1px; */
+
   background-size: contain, cover;
   background-position-y: calc(100% + 0.390625vw), -2px;
   padding: 80px 40px;
-}
+} */
 
 .main-content .section-light {
   background-color: #EEEEE7;

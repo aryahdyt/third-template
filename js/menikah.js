@@ -41,9 +41,6 @@ function getsays() {
   parent.empty();
 
   let div = `<div class="box"><div class="media">
-    <div class="media-left"><figure class="image is-48x48 rounded">
-    <img class="is-rounded" src="https://robohash.org/{ava}" alt="Placeholder image">
-    </figure></div>
     <div class="media-content"><div class="is-size-6 has-text-weight-semibold">{name}</div>
     <small>{date}</small><div class="is-size-6 has-text-weight-normal">
     {say}<br></div></div></div></div>`;
