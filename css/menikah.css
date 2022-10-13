@@ -931,6 +931,13 @@ color: #303030;
 
 }
 
+.parent-say{
+  border-radius: 5px;
+  max-height: 20rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
 .map-responsive iframe{
 
   left:0;
