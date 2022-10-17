@@ -13,8 +13,9 @@ $(document).on('click', '.btn-open', function () {
   play_music();
 
   // play video
-  var video = document.getElementsByClassName("videot")[0];
-  video.play();
+  // var video = document.getElementsByClassName("videot")[0];
+  // video.play();
+  startPlayback();
 
   document.getElementById('btnMusic').classList.remove('is-hidden');
   document.getElementById('toTop').classList.remove('is-hidden');
@@ -272,6 +273,36 @@ $(window).load(function() {
   var Body = $("body");
   Body.addClass("preloader-site");
 });
+
+var video;
+  var canvas;
+
+function startPlayback()
+{
+  if (!video) {
+    video = document.createElement('video');
+    video.src = './image/dummyvideo.mp4';
+    video.loop = true;
+    video.muted = true;
+    video.addEventListener('playing', paintVideo);
+  }
+  video.play();
+}
+
+function paintVideo()
+{
+  if (!canvas) {
+    canvas = document.createElement('canvas');
+    parent = document.getElementById('parent-video');
+    canvas.classList.add("videot");
+    canvas.width = video.videoWidth;
+    canvas.height = video.videoHeight;
+    parent.appendChild(canvas);
+  }
+  canvas.getContext('2d').drawImage(video, 0, 0, canvas.width, canvas.height);
+  if (!video.paused)
+    requestAnimationFrame(paintVideo);
+}
 
 //  function onYouTubeIframeAPIReady() {
 //   var player;
