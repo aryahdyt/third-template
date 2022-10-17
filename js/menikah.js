@@ -284,6 +284,7 @@ function startPlayback()
     video.src = './image/dummyvideo.mp4';
     video.loop = true;
     video.muted = true;
+    video.playsinline = true;
     video.addEventListener('playing', paintVideo);
   }
   video.play();
