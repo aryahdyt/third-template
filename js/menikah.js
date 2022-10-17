@@ -12,6 +12,10 @@ $(document).on('click', '.btn-open', function () {
   // console.log('cliked');
   play_music();
 
+  // play video
+  var video = document.getElementsByClassName("videot")[0];
+  video.play();
+
   document.getElementById('btnMusic').classList.remove('is-hidden');
   document.getElementById('toTop').classList.remove('is-hidden');
 

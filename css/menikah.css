@@ -79,7 +79,7 @@ html {
 }
 
 .junge-normal{
-  font-family: 'Junge';
+  font-family: 'Junge', 'Baskerville', serif;
   font-size: 18px;
 }
 
@@ -320,7 +320,7 @@ html {
 
 .hero-date{
   font-weight: 600;
-font-size: 3.5vh;
+font-size: calc(18px + 0.390625vw);
 /* line-height: 34px; */
 letter-spacing: 0.08em;
 
@@ -329,7 +329,7 @@ color: #303030;
 
 .hero-location{
   font-weight: 400;
-font-size: 3vh;
+  font-size: calc(16px + 0.390625vw);
 line-height: 20px;
 text-align: center;
 letter-spacing: 0.1em;
