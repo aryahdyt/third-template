@@ -318,12 +318,14 @@ function startPlayback()
   if (!video) {
     video = document.createElement('video');
     video.src = './image/dummyvideo.mp4';
+    video.autoplay = true;
     video.loop = true;
     video.muted = true;
     video.playsInline = true;
+    video.playsinline = true;
     video.addEventListener('playing', paintVideo);
   }
-  video.play();
+  // video.play();
 }
 
 function paintVideo()
