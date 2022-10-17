@@ -274,6 +274,42 @@ $(window).load(function() {
   Body.addClass("preloader-site");
 });
 
+// var player, iframe;
+// var $ = document.querySelector.bind(document);
+
+// // init player
+// function onYouTubeIframeAPIReady() {
+//   player = new YT.Player('player', {
+//     height: '200',
+//     width: '300',
+//     videoId: 'dQw4w9WgXcQ',
+//     events: {
+//       'onReady': onPlayerReady
+//     }
+//   });
+// }
+
+// // when ready, wait for clicks
+// function onPlayerReady(event) {
+//   var player = event.target;
+//   iframe = $('#player');
+//   setupListener(); 
+// }
+
+// function setupListener (){
+// $('button').addEventListener('click', playFullscreen);
+// }
+
+// function playFullscreen (){
+//   player.playVideo();//won't work on mobile
+  
+//   var requestFullScreen = iframe.requestFullScreen || iframe.mozRequestFullScreen || iframe.webkitRequestFullScreen;
+//   if (requestFullScreen) {
+//     requestFullScreen.bind(iframe)();
+//   }
+// }
+
+
 var video;
   var canvas;
 
@@ -284,7 +320,7 @@ function startPlayback()
     video.src = './image/dummyvideo.mp4';
     video.loop = true;
     video.muted = true;
-    video.playsinline = true;
+    video.playsInline = true;
     video.addEventListener('playing', paintVideo);
   }
   video.play();
@@ -305,7 +341,7 @@ function paintVideo()
     requestAnimationFrame(paintVideo);
 }
 
-//  function onYouTubeIframeAPIReady() {
+// function onYouTubeIframeAPIReady() {
 //   var player;
 //   player = new YT.Player('muteYouTubeVideoPlayer', {
 //     videoId: 'fXN-m49MHO0', // YouTube Video ID
@@ -314,7 +350,7 @@ function paintVideo()
 //     playerVars: {
 //       autoplay: 1,        // Auto-play the video on load
 //       controls: 0,        // Show pause/play buttons in player
-//       showinfo: 0,        // Hide the video title
+//       showinfo: 1,        // Hide the video title
 //       modestbranding: 1,  // Hide the Youtube Logo
 //       loop: 1,            // Run the video in a loop
 //       fs: 0,              // Hide the full screen button
@@ -329,4 +365,6 @@ function paintVideo()
 //       }
 //     }
 //   });
-//  }
+// }
+
+
