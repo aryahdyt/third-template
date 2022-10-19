@@ -267,6 +267,10 @@ $.fn.serializeObject = function()
 $(document).ready(function($) {
   $(".preloader-wrapper").fadeOut();
   $("body").removeClass("preloader-site");
+
+  var video = document.querySelector('video');
+  enableInlineVideo(video);
+
 });
 
 $(window).load(function() {
