@@ -15,7 +15,7 @@ $(document).on('click', '.btn-open', function () {
   // play video
   // var video = document.getElementsByClassName("videot")[0];
   // video.play();
-  startPlayback();
+  // startPlayback();
 
   document.getElementById('btnMusic').classList.remove('is-hidden');
   document.getElementById('toTop').classList.remove('is-hidden');
@@ -311,7 +311,7 @@ $(window).load(function() {
 
 
 var video;
-  var canvas;
+var canvas;
 
 function startPlayback()
 {
@@ -325,7 +325,7 @@ function startPlayback()
     video.playsinline = true;
     video.addEventListener('playing', paintVideo);
   }
-  // video.play();
+  video.play();
 }
 
 function paintVideo()

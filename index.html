@@ -478,22 +478,28 @@
           allowfullscreen></iframe>
       </div> -->
 
-      <!-- <div class="fullpersen"> -->
-      <!-- <iframe width="100" height="100"
+      <!-- <div class="fullpersen">
+        <iframe width="500" height="500"
           src="https://www.youtube.com/embed/MAqywI8SmXE?autoplay=1&mute=1&loop=1&color=white&controls=0&modestbranding=1&playsinline=1&rel=0&enablejsapi=1&loop=1&rel=0"
           title="YouTube video player" frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe> -->
+          allowfullscreen></iframe>
+      </div> -->
+      <!-- <div id="muteYouTubeVideoPlayer"></div> -->
+      <!-- <div id="videot" style="position: relative;width: 100%;height: 31vw;overflow: hidden;">
+        <div id="ytplayer" style="width: 100%;height: 56vw;"></div>
+      </div> -->
+
 
       <!-- <video width="320" height="240" muted loop playsinline class="videot" style="display:none">
         <source src="./image/dummyvideo.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video> -->
       <div id="parent-video">
-        <!-- <video width="320" height="240" class="videot" muted loop playsinline>
+        <video preload="true" autoplay muted loop playsinline type="video/mp4" class="videot">
           <source src="./image/dummyvideo.mp4" type="video/mp4">
           Your browser does not support the video tag.
-        </video> -->
+        </video>
 
       </div>
       <!-- </div> -->
@@ -644,6 +650,59 @@
 
   <script src="js/jquery.coundown.js"></script>
   <script src="js/menikah.js"></script>
+
+
+  <!-- <script>
+    // 2. This code loads the IFrame Player API code asynchronously.
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/player_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    // 3. This function creates an <iframe> (and YouTube player)
+    //    after the API code downloads.
+    var player;
+
+    function onYouTubePlayerAPIReady() {
+      player = new YT.Player('ytplayer', {
+        width: '100%',
+        height: '100%',
+        videoId: 'MAqywI8SmXE',
+        playerVars: {
+          autoplay: 1, // Auto-play the video on load
+          controls: 0, // Show pause/play buttons in player
+          showinfo: 1, // Hide the video title
+          modestbranding: 1, // Hide the Youtube Logo
+        },
+        events: {
+          'onReady': onPlayerReady,
+          'onStateChange': onPlayerStateChange,
+          'onClick': function () {
+            return false;
+          }
+        },
+      });
+    }
+
+    // 4. The API will call this function when the video player is ready.
+    function onPlayerReady(event) {
+      event.target.playVideo();
+      player.mute(); // comment out if you don't want the auto played video muted
+      player.setPlaybackQuality('hd1080');
+      player.setLoop(true);
+    }
+
+    function onPlayerStateChange(event) {
+      if (event.data == YT.PlayerState.ENDED) {
+        player.seekTo(0);
+        player.playVideo();
+      }
+    }
+
+    function stopVideo() {
+      player.stopVideo();
+    }
+  </script> -->
 
   <script>
     AOS.init({
